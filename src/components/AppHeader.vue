@@ -26,8 +26,9 @@ export default {
     </header>
 </template>
 
-<style>
+<style scoped>
 .navbar {
+    padding: 10px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -44,6 +45,5 @@ li {
 
 a {
     text-decoration: none;
-
 }
 </style>

@@ -1,16 +1,15 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
 export default {
   name: 'DC',
-  components: { AppHeader }
+  components: { AppHeader, AppMain }
 };
 </script>
 
 <template>
   <AppHeader />
-  <main>
-    -> Content goes here
-  </main>
+  <AppMain />
   <footer>
     <section class="footer-top">
 
@@ -24,4 +23,10 @@ export default {
   </footer>
 </template>
 
-<style></style>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+</style>
