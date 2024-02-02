@@ -2,14 +2,18 @@
 import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
+import { HeaderNavbar } from './assets/data';
 export default {
   name: 'DC',
-  components: { AppHeader, AppMain, AppFooter }
+  components: { AppHeader, AppMain, AppFooter },
+  data: () => ({
+    HeaderNavbar
+  })
 };
 </script>
 
 <template>
-  <AppHeader />
+  <AppHeader :navbarLinks="HeaderNavbar" />
   <AppMain />
   <AppFooter />
 </template>

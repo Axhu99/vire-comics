@@ -1,6 +1,9 @@
 <script>
 export default {
-    name: 'AppHeader'
+    name: 'AppHeader',
+    props: {
+        navbarLinks: [],
+    },
 }
 </script>
 
@@ -11,7 +14,7 @@ export default {
                 <img src="../../public/img/dc-logo.png" alt="">
             </figure>
             <ul class="navbar-ul">
-                <li><a href="#">CHARACTERS</a></li>
+                <li><a :href='url'>{{ text }}</a></li>
                 <li><a href="#">COMICS</a></li>
                 <li><a href="#">MOVIES</a></li>
                 <li><a href="#">TV</a></li>
