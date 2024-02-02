@@ -14,7 +14,9 @@ export default {
                 <img src="../../public/img/dc-logo.png" alt="">
             </figure>
             <ul class="navbar-ul">
-                <li v-for="navbarLink in navbarLinks"><a :href='navbarLink.url'>{{ navbarLink.text }}</a></li>
+                <li v-for="navbarLink in navbarLinks">
+                    <a :href='navbarLink.url' :class="{ 'active': navbarLink.current == true }">{{ navbarLink.text }}</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -35,9 +37,16 @@ export default {
 
 li {
     list-style-type: none;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 a {
     text-decoration: none;
+    color: #000;
+}
+
+a.active {
+    color: blue;
 }
 </style>
