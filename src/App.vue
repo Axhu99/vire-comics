@@ -1,26 +1,17 @@
 <script>
+import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 export default {
   name: 'DC',
-  components: { AppHeader, AppMain }
+  components: { AppHeader, AppMain, AppFooter }
 };
 </script>
 
 <template>
   <AppHeader />
   <AppMain />
-  <footer>
-    <section class="footer-top">
-
-    </section>
-    <section class="footer-bot">
-      <button>SIGN-UP NOW</button>
-      <div class="social">
-
-      </div>
-    </section>
-  </footer>
+  <AppFooter />
 </template>
 
 <style>
