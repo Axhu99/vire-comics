@@ -2,19 +2,20 @@
 import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
-import { HeaderNavbar } from './assets/data';
+import { HeaderNavbar, Comics } from './assets/data';
 export default {
   name: 'DC',
   components: { AppHeader, AppMain, AppFooter },
   data: () => ({
-    HeaderNavbar
+    HeaderNavbar,
+    Comics
   })
 };
 </script>
 
 <template>
   <AppHeader :navbarLinks="HeaderNavbar" />
-  <AppMain />
+  <AppMain :comics="Comics" />
   <AppFooter />
 </template>
 
@@ -24,4 +25,14 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/* img {
+  max-width: 100%;
+  height: auto;
+} */
 </style>
