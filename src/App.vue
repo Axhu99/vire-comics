@@ -13,6 +13,7 @@ export default {
 };
 </script>
 
+<!-- TODO separere e creare i data dove e' possibile fare SCCS -->
 <template>
   <AppHeader :navbarLinks="HeaderNavbar" />
   <AppMain :comics="Comics" />

@@ -5,9 +5,9 @@ export default {
 </script>
 
 <template>
-    <footer class="bg-footer">
-        <div class="container">
-            <section class="footer-top">
+    <footer>
+        <section class="footer-top">
+            <div class="container top-background">
                 <!-- TODO rendere dinamica questa lista inventando un DATA con: -title -href -nome -->
                 <div class="footer-list">
                     <ul>
@@ -48,28 +48,39 @@ export default {
                         <li><a href="">DC Power Visa</a></li>
                     </ul>
                 </div>
-
                 <div class="logo">
                 </div>
-
-            </section>
-            <section class="footer-bot">
-                <div class="social">
-
+            </div>
+        </section>
+        <section class="footer-bot">
+            <div class="container">
+                <div class="footer-sign">
+                    <div class="button-sign">
+                        <a class="button" href="">SIGN-UP NOW</a>
+                    </div>
+                    <div class="social">
+                        <ul class="social-list">
+                            <li><a href=""><img src="../../public/img/footer-facebook.png" alt=""></a></li>
+                            <li><a href=""><img src="../../public/img/footer-twitter.png" alt=""></a></li>
+                            <li><a href=""><img src="../../public/img/footer-youtube.png" alt=""></a></li>
+                            <li><a href=""><img src="../../public/img/footer-pinterest.png" alt=""></a></li>
+                            <li><a href=""><img src="../../public/img/footer-periscope.png" alt=""></a></li>
+                        </ul>
+                    </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </footer>
 </template>
 
 <style>
-.bg-footer {
+.footer-top {
     background-image: url(../../public/img/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.footer-top {
+.top-background {
     display: flex;
     height: 500px;
 }
@@ -118,5 +129,52 @@ export default {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.footer-bot {
+    background-color: #303030;
+    padding: 40px 0;
+}
+
+.footer-sign {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-sign {
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.button {
+    color: #fff;
+    font-size: 1.3rem;
+    border: 1px solid royalblue;
+    padding: 20px 30px;
+}
+
+a.button {
+    text-decoration: none;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social-list {
+    display: flex;
+    gap: 20px;
+}
+
+.social-list li {
+    list-style-type: none;
+}
+
+.social-list img {
+    width: 40px;
 }
 </style>
