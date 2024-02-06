@@ -20,20 +20,12 @@ export default {
   <AppFooter />
 </template>
 
-<style>
+<style lang="scss">
+@use './assets/scss/style.scss';
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-/* img {
-  max-width: 100%;
-  height: auto;
-} */
 </style>
